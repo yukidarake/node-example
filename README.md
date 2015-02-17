@@ -20,6 +20,7 @@ main.js作成
 ```javascript
 // main.js
 console.log('Hello World!');
+```
 
 実行
 ```
@@ -43,8 +44,8 @@ module.exports = function(a, b) {
 };
 ```
 
+実行
 ```
-# 実行
 cd 2-1
 node main.js
 ```
@@ -63,8 +64,8 @@ exports.sum = function(a, b) {
 };
 ```
 
+実行
 ```
-// 実行
 cd 2-2
 node main.js
 ```
