@@ -1,0 +1,22 @@
+{
+  "name": "node-example",
+  "version": "1.0.0",
+  "description": "Node.jsの基礎の基礎",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yukidarake/node-example"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yukidarake/node-example/issues"
+  },
+  "homepage": "https://github.com/yukidarake/node-example",
+  "directories": {
+        "test": "test/"
+  }
+}
