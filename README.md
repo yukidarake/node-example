@@ -69,7 +69,33 @@ exports.sum = function(a, b) {
 cd 2-2
 node main.js
 ```
-# 3. ユニットテスト
+
+# 3. 非同期
+ファイルとかネットワークが絡むと非同期な世界になります。
+```javascript
+// load.js
+var fs = require('fs');
+
+module.exports = function(callback) {
+    fs.readFile('./package.json', 'utf8', function(err, content) {
+        if (err) {
+            return callback(err);
+        }
+
+        var json = JSON.parse(content);
+        callback(err, json);
+    });
+};
+```
+
+実行
+```
+cd 3-1
+node main.js
+```
+
+
+# 4. ユニットテスト
 mocha + power-assertを使います。
 
 このページが参考になります。
