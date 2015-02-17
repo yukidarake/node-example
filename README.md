@@ -73,6 +73,20 @@ node main.js
 # 3. 非同期
 ファイルとかネットワークが絡むと非同期な世界になります。
 ```javascript
+// main.js
+var load = require('./load');
+
+load(function(err, json) {
+   if (err) {
+       console.log(err);
+       return;
+   }
+
+   console.log(json.description);
+});
+```
+
+```javascript
 // load.js
 var fs = require('fs');
 
